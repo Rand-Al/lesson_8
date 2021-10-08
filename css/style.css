@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Akronim&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Noto+Sans+Mono&family=Roboto:wght@400;700;900&display=swap");
+/* Обнуление стилей */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px;
+}
+body {
+	line-height: 1;
+	background-color: rgba(216, 206, 206, 0.103);
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	padding: 10px 0 40px 0;
+}
+
+/*======================== */
+.header {
+	padding: 80px 0px 5px 0;
+	background: linear-gradient(to left, rgba(212, 116, 116, 0.404) 0%, rgba(223, 185, 185, 0.479) 100%),
+		#fff url("../img/header-bg.jpg") 50% / cover no-repeat;
+	border-radius: 30px;
+	max-width: 1280px;
+	margin: 0px auto 50px auto;
+}
+.header-nav {
+	min-width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 100px;
+}
+.header-link {
+	display: inline-block;
+	border: 1px solid #000;
+	background-color: #4d4b77;
+	padding: 5px 10px;
+	color: #fff;
+}
+.header-link:visited {
+	color: rgba(204, 202, 111, 0.027);
+}
+.header-link:hover {
+	box-shadow: 0px 2px 1px 1px rgba(44, 48, 58, 0.705);
+	color: rgba(255, 255, 255, 0.747);
+}
+.header-link:focus {
+	color: blue;
+	outline: 2px solid #000;
+}
+.header-link:active {
+	background-color: rgb(55, 52, 92);
+	border: 1px solid transparent;
+	box-shadow: 0px 1px 0px 1px rgba(125, 130, 148, 0.63);
+}
+
+.header-link:not(:last-child) {
+	margin: 0 30px 0 0;
+}
+.block {
+	max-width: 900px;
+	margin: 0 auto;
+	font-family: "Akronim", cursive;
+}
+.block-container {
+	padding: 20px;
+}
+.block-title {
+	font-size: 60px;
+	text-align: center;
+	margin-bottom: 50px;
+	color: rgb(27, 7, 17);
+}
+.block-title::before {
+	content: url("../img/idea.png");
+	display: block;
+	margin-bottom: 40px;
+}
+.block-text {
+	background-image: linear-gradient(to top, rgba(255, 255, 255, 0.637) 0%, rgba(255, 255, 255, 0) 100%);
+	font-family: "Noto Sans Mono", monospace;
+	max-width: 500px;
+	font-size: 18px;
+	line-height: 28px;
+	padding: 20px;
+	margin: 0 auto;
+	border-radius: 8px;
+	text-align: justify;
+	color: rgb(29, 29, 28);
+}
+.inform {
+	font-family: "Merriweather", serif;
+	line-height: 24px;
+	margin-bottom: 50px;
+}
+.inform-container {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 10px 20px;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%),
+		url("../img/bg-inform-item.jpg");
+	border-radius: 20px;
+}
+.inform-container p:last-of-type:hover {
+	color: rgb(119, 116, 116);
+}
+.inform-item {
+	padding: 2px 10px;
+}
+.inform-item:nth-child(2):hover {
+	background-color: rgba(107, 59, 59, 0.521);
+	border-radius: 20px 15px 3px 15px;
+	color: rgba(255, 255, 255, 0.719);
+}
+
+.inform-item:nth-child(3),
+.inform-item:nth-child(4) {
+	background-color: rgba(146, 140, 140, 0.404);
+}
+.inform-item:first-child {
+	color: rgba(202, 54, 54, 0.548);
+	background-color: rgba(255, 255, 255, 0.432);
+	border-radius: 5px 20px 14px 8px;
+}
+.inform-item:first-child:hover {
+	color: rgb(202, 54, 54);
+}
+.inform-item:not(:last-child) {
+	margin-bottom: 20px;
+}
+.cards {
+	background: linear-gradient(to top, rgba(214, 179, 179, 0.185) 0%, #fff 100%),
+		url("../img/cards-bg.jpg") 50% / cover no-repeat;
+	max-width: 1280px;
+	margin: 0 auto 50px auto;
+	padding: 20px;
+	border-radius: 0 0 10px 50px;
+}
+.cards-items {
+	max-width: 500px;
+	display: inline-block;
+}
+.cards-items:first-child,
+.cards-items:nth-child(2) {
+	margin-bottom: 40px;
+}
+.cards-items:first-child,
+.cards-items:nth-child(3) {
+	margin-right: 100px;
+}
+.cards-title {
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 17px;
+	padding-left: 20px;
+	margin-left: 90px;
+	margin-bottom: 5px;
+	text-shadow: 1px 1px 1px #fff;
+}
+.cards-title::after {
+	content: "";
+	display: inline-block;
+	width: 300px;
+	height: 3px;
+	background-color: #4e47cf;
+}
+.cards-text {
+	text-align: justify;
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 20px;
+	margin-left: 100px;
+	background-color: rgba(255, 255, 255, 0.452);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.cards-button {
+	display: block;
+	max-width: 110px;
+	min-height: 18px;
+	color: rgba(0, 0, 0, 0.616);
+	border: 1px solid #000;
+	padding: 8px 10px 8px 23px;
+	margin: 0 0 30px auto;
+	background-color: rgba(255, 255, 255, 0.418);
+	box-shadow: 1px 1px 1px 1px #4d4b77;
+}
+.cards-button:hover {
+	background-color: #fff;
+}
+.cards-button:active {
+	box-shadow: 0px 0px 0px 1px #4d4b77;
+}
+.list-container {
+	background: linear-gradient(
+		to right,
+		rgba(225, 255, 255, 1) 0%,
+		rgba(225, 255, 255, 1) 7%,
+		rgba(225, 255, 255, 1) 12%,
+		rgba(230, 248, 253, 1) 30%,
+		rgba(253, 255, 255, 1) 63%,
+		rgba(253, 255, 255, 1) 78%,
+		rgba(190, 228, 248, 1) 100%,
+		rgba(200, 238, 251, 1) 100%,
+		rgba(177, 216, 245, 1) 100%
+	);
+	max-width: 400px;
+	margin: 0px auto 30px auto;
+	padding: 50px;
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.list li {
+	font-family: "Merriweather", serif;
+	font-weight: 700;
+	font-size: 18px;
+	padding-left: 20px;
+}
+.list li::before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: rgb(93, 67, 141);
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.promise {
+	max-width: 1280px;
+	margin: 0 auto 30px auto;
+	padding: 50px;
+	background-color: #fff;
+	border-radius: 10px;
+	font-family: "Roboto", sans-serif;
+}
+.promise-suptitle {
+	color: #5d62b5;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 2.5px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.promise-suptitle h2 {
+	display: inline-block;
+}
+.promise-suptitle::before {
+	content: url("../img/mark.png");
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	vertical-align: middle;
+}
+.promise-title {
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 900;
+	max-width: 583px;
+	margin-bottom: 43px;
+}
+.promise-item {
+	max-width: 30%;
+	display: inline-block;
+}
+.promise-item:first-child::before {
+	content: url("../img/dog_love.png");
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+}
+.promise-item:last-child::before {
+	content: url("../img/dog_stream.png");
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+}
+.promise-item:nth-child(2)::before {
+	content: url("../img/dog_vet.png");
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+}
+.promise-item .title {
+	font-size: 19px;
+	font-weight: 900;
+	line-height: 26px;
+	color: #f2726f;
+	margin-bottom: 20px;
+	display: inline-block;
+	padding-top: 5px;
+}
+.promise-item .text {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	font-weight: 400;
+	padding-left: 85px;
+}
+.choose {
+	max-width: 255px;
+	margin: 0 auto 30px auto;
+}
+.choose-container {
+	padding: 20px;
+	background-color: #252525;
+	color: rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
+}
+.choose-title {
+	font-size: 22px;
+	line-height: 25px;
+	letter-spacing: -0.28px;
+	color: #fff;
+}
+.choose-title h2 {
+	margin-bottom: 10px;
+}
+.choose-title::after {
+	content: "";
+	display: block;
+	width: 56px;
+	height: 2px;
+	background-color: #34c759;
+	margin-bottom: 20px;
+}
+.footer {
+	max-width: 800px;
+	padding: 30px;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 20px;
+	background: linear-gradient(to right, rgba(214, 179, 179, 0.185) 0%, #fff 100%),
+		url("../img/footer-bg.jpg") 50% / cover no-repeat;
+}
+.footer-title {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	color: rgba(0, 0, 0, 0.836);
+	text-shadow: 1px 1px 1px #5d62b5;
+}
+.footer-nav a {
+	display: inline-block;
+	border: 1px solid #000;
+	padding: 10px;
+	background-color: rgb(134, 172, 126);
+	color: #fff;
+	border-radius: 13px;
+	box-shadow: 0px 2px 1px 0px #000;
+}
+.footer-nav a:hover {
+	background-color: #fff;
+	color: #000;
+}
+.footer-nav a:active {
+	box-shadow: 0px 1px 1px 0px #000;
+	border: 1px solid transparent;
+}
+.footer-nav a:not(:last-of-type) {
+	margin-right: 30px;
+}
